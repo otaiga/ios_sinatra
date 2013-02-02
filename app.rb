@@ -11,10 +11,17 @@ end
 
 get "/food_menu.json" do
   content_type :json
-  return {panninis: ["chicken", "tuna", "cheese"], jacket_pots: ["beans", "cheese"]}.to_json
+  return {
+    panninis: ["BBQ Chicken & Sweetcorn", "Chicken & Bacon", "Chicken Tikka", "Tuna Mayonnaise", "Cheese & Onion", "Chees & Bacon", "Cheese & Tomato", "Mozzarella & Red Pesto"],
+    jacket_potatoes: ["Beans", "Cheese", "Coleslaw", "Plain/Butter", "Chicken Curry", "Chilli"],
+    other_delights: ["Bacon Roll", "Beans on Toast", "Toasted Tea Cake", "Toast", "Victoria Sponge"]
+    }.to_json
 end
 
 get "/drinks_menu.json" do
   content_type :json
-  return {hot_drinks: ["Latte", "Mocha", "Tea's"], cold_drinks: ["Cans", "Children's drinks"]}.to_json
+  return {
+    hot_drinks: ["Americano", "Cappucino", "Latte", "Espresso", "Mocha", "Hot Chocolate", "Tea's"],
+    cold_drinks: ["Cans", "Children's Drinks"]
+    }.to_json
 end
