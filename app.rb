@@ -4,7 +4,7 @@ require 'json'
 
 # Simple app to demonstrate api.
 
-get "/openning_times.json" do
+get "/opening_times.json" do
   content_type :json
   return {monday_to_friday: "08:30 - 16:30", saturday: "10:00 - 14:00", sunday: "closed"}.to_json
 end
